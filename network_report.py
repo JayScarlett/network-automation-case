@@ -104,6 +104,22 @@ def print_device_report():
             "|",
             device["status"]
         )
+def print_device_type_totals():
+    device_types = {}
 
+    for device in devices:
+        device_type = device["device_type"]
+
+        if device_type in device_types:
+            device_types[device_type] += 1
+        else:
+            device_types[device_type] = 1
+
+    print("\nDEVICE TYPE TOTALS")
+    print("==================")
+
+    for device_type in device_types:
+        print(device_type, ":", device_types[device_type])
 
 print_device_report()
+print_device_type_totals()
