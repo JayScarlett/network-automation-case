@@ -1,0 +1,90 @@
+devices = [
+    {
+        "hostname": "RTR1",
+        "device_type": "Router",
+        "management_ip": "192.168.1.1",
+        "location": "Headquarters",
+        "status": "Operational",
+        "cpu_usage": 35,
+        "memory_usage": 42,
+        "uptime": 120,
+        "backup_status": "Successful"
+    },
+    {
+        "hostname": "RTR2",
+        "device_type": "Router",
+        "management_ip": "192.168.1.2",
+        "location": "Branch Office",
+        "status": "Operational",
+        "cpu_usage": 82,
+        "memory_usage": 61,
+        "uptime": 45,
+        "backup_status": "Successful"
+    },
+    {
+        "hostname": "SW1",
+        "device_type": "Switch",
+        "management_ip": "192.168.1.10",
+        "location": "Headquarters",
+        "status": "Operational",
+        "cpu_usage": 28,
+        "memory_usage": 50,
+        "uptime": 200,
+        "backup_status": "Successful"
+    },
+    {
+        "hostname": "SW2",
+        "device_type": "Switch",
+        "management_ip": "192.168.1.11",
+        "location": "Headquarters",
+        "status": "Down",
+        "cpu_usage": 0,
+        "memory_usage": 0,
+        "uptime": 0,
+        "backup_status": "Failed"
+    },
+    {
+        "hostname": "SW3",
+        "device_type": "Switch",
+        "management_ip": "192.168.2.10",
+        "location": "Branch Office",
+        "status": "Operational",
+        "cpu_usage": 40,
+        "memory_usage": 88,
+        "uptime": 67,
+        "backup_status": "Successful"
+    },
+    {
+        "hostname": "AP1",
+        "device_type": "Access Point",
+        "management_ip": "192.168.1.20",
+        "location": "Headquarters",
+        "status": "Operational",
+        "cpu_usage": 25,
+        "memory_usage": 38,
+        "uptime": 90,
+        "backup_status": "Successful"
+    },
+    {
+        "hostname": "AP2",
+        "device_type": "Access Point",
+        "management_ip": "192.168.2.20",
+        "location": "Branch Office",
+        "status": "Operational",
+        "cpu_usage": 55,
+        "memory_usage": 62,
+        "uptime": 3,
+        "backup_status": "Successful"
+    },
+    {
+        "hostname": "FW1",
+        "device_type": "Firewall",
+        "management_ip": "192.168.1.254",
+        "location": "Headquarters",
+        "status": "Operational",
+        "cpu_usage": 48,
+        "memory_usage": 72,
+        "uptime": 150,
+        "backup_status": "Failed"
+    }
+]
