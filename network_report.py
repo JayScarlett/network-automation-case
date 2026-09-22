@@ -88,3 +88,22 @@ devices = [
         "backup_status": "Failed"
     }
 ]
+def print_device_report():
+    print("NETWORK OPERATIONAL REPORT")
+    print("==========================")
+
+    for device in devices:
+        print(
+            device["hostname"],
+            "|",
+            device["device_type"],
+            "|",
+            device["management_ip"],
+            "|",
+            device["location"],
+            "|",
+            device["status"]
+        )
+
+
+print_device_report()
