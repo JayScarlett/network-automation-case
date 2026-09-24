@@ -82,7 +82,6 @@ Live operational information would normally be collected when the automation run
 
 At a high level, the data flow could look like this:
 
-In practice, the Python automation could communicate with centralized management platforms through an API, while direct device information could be collected using methods such as SSH, SNMP, or APIs:
 ```
 [SIMPLIFIED DIAGRAM]
 +--------------------------------------------------+
