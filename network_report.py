@@ -89,21 +89,19 @@ devices = [
     }
 ]
 def print_device_report():
-    print("NETWORK OPERATIONAL REPORT")
+    print("\nNETWORK OPERATIONAL REPORT")
     print("==========================")
 
     for device in devices:
-        print(
-            device["hostname"],
-            "|",
-            device["device_type"],
-            "|",
-            device["management_ip"],
-            "|",
-            device["location"],
-            "|",
-            device["status"]
-        )
+        print("\nHostname:", device["hostname"])
+        print("Device Type:", device["device_type"])
+        print("Management IP:", device["management_ip"])
+        print("Location:", device["location"])
+        print("Status:", device["status"])
+        print("CPU Usage:", device["cpu_usage"], "%")
+        print("Memory Usage:", device["memory_usage"], "%")
+        print("Uptime:", device["uptime"], "days")
+        print("Backup Status:", device["backup_status"])
 def print_device_type_totals():
     device_types = {}
 
@@ -121,5 +119,35 @@ def print_device_type_totals():
     for device_type in device_types:
         print(device_type, ":", device_types[device_type])
 
+def print_attention_report():
+    print("\nDEVICES NEEDING ATTENTION")
+    print("=========================")
+
+    for device in devices:
+        issues = []
+
+        if device["cpu_usage"] > 80:
+            issues.append("High CPU")
+
+        if device["memory_usage"] > 80:
+            issues.append("High memory")
+
+        if device["backup_status"] == "Failed":
+            issues.append("Failed backup")
+
+        if device["uptime"] < 7:
+            issues.append("Low uptime")
+
+        if device["status"] != "Operational":
+            issues.append("Not operational")
+
+        if len(issues) > 0:
+            print(device["hostname"])
+
+            for issue in issues:
+                print(" -", issue)
+    
+
 print_device_report()
 print_device_type_totals()
+print_attention_report()
