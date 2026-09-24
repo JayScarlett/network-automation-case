@@ -1,0 +1,105 @@
+
+NETWORK OPERATIONAL REPORT
+==========================
+
+Hostname: RTR1
+Device Type: Router
+Management IP: 192.168.1.1
+Location: Headquarters
+Status: Operational
+CPU Usage: 35 %
+Memory Usage: 42 %
+Uptime: 120 days
+Backup Status: Successful
+
+Hostname: RTR2
+Device Type: Router
+Management IP: 192.168.1.2
+Location: Branch Office
+Status: Operational
+CPU Usage: 82 %
+Memory Usage: 61 %
+Uptime: 45 days
+Backup Status: Successful
+
+Hostname: SW1
+Device Type: Switch
+Management IP: 192.168.1.10
+Location: Headquarters
+Status: Operational
+CPU Usage: 28 %
+Memory Usage: 50 %
+Uptime: 200 days
+Backup Status: Successful
+
+Hostname: SW2
+Device Type: Switch
+Management IP: 192.168.1.11
+Location: Headquarters
+Status: Down
+CPU Usage: 0 %
+Memory Usage: 0 %
+Uptime: 0 days
+Backup Status: Failed
+
+Hostname: SW3
+Device Type: Switch
+Management IP: 192.168.2.10
+Location: Branch Office
+Status: Operational
+CPU Usage: 40 %
+Memory Usage: 88 %
+Uptime: 67 days
+Backup Status: Successful
+
+Hostname: AP1
+Device Type: Access Point
+Management IP: 192.168.1.20
+Location: Headquarters
+Status: Operational
+CPU Usage: 25 %
+Memory Usage: 38 %
+Uptime: 90 days
+Backup Status: Successful
+
+Hostname: AP2
+Device Type: Access Point
+Management IP: 192.168.2.20
+Location: Branch Office
+Status: Operational
+CPU Usage: 55 %
+Memory Usage: 62 %
+Uptime: 3 days
+Backup Status: Successful
+
+Hostname: FW1
+Device Type: Firewall
+Management IP: 192.168.1.254
+Location: Headquarters
+Status: Operational
+CPU Usage: 48 %
+Memory Usage: 72 %
+Uptime: 150 days
+Backup Status: Failed
+
+DEVICE TYPE TOTALS
+==================
+Router : 2
+Switch : 3
+Access Point : 2
+Firewall : 1
+
+DEVICES NEEDING ATTENTION
+=========================
+RTR2
+ - High CPU
+SW2
+ - Failed backup
+ - Low uptime
+ - Not operational
+SW3
+ - High memory
+AP2
+ - Low uptime
+FW1
+ - Failed backup
